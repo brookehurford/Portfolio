@@ -9,57 +9,22 @@
     flex: 1;
     height: 80vh;
     margin: 0px 10px;
-    .project1, .project2 {
+    .short-item, .long-item {
       @include flex($justify: center, $align-items: center);
       margin: 10px;
       color: white;
     }
+    .short-item {
+      min-height: 300px;
+    }
+    .long-item {
+      min-height: 500px;
+    }
   }
 }
 
-// .row1 {
-//   .project1 {
-//     height: 25%;
-//     width: 100%;
-//     background-image: url("#{$img}/songLab-square-thumb.png");
-//     background-size: cover;
-//     box-shadow: 1px 1px 1px rgba($black, 0.5);
-//     transition: all 200ms linear;
-//     &:hover {
-//       transition: all 200ms linear;
-//       background-image: linear-gradient(rgba($black, 0.5), rgba($black, 0.5)),url("#{$img}/songLab-square-thumb.png");
-//     }
-//   }
-//   .project2 {
-//     height: 50%;
-//     width: 100%;
-//     background-image: url("#{$img}/fringe-homepage.png");
-//     background-size: cover;
-//     box-shadow: 1px 1px 1px rgba($black, 0.5);
-//   }
-// }
-
-// .row1 {
-//   .project1 {
-//     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/songLab-thumbnail.png");
-//     height: 25%;
-//     width: 100%;
-//     background-image: url("#{$img}/songLab-thumbnail.png");
-//     background-size: cover;
-//     box-shadow: 1px 1px 1px rgba($black, 0.5);
-//   }
-//   .project2 {
-//     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/fringe-homepage.png");
-//     height: 50%;
-//     width: 100%;
-//     background-image: url("#{$img}/fringe-homepage.png");
-//     background-size: cover;
-//     box-shadow: 1px 1px 1px rgba($black, 0.5);
-//   }
-// }
-
 .row1 {
-  .project2 {
+  .long-item {
     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/songLab-long.png");
     height: 50%;
     width: 100%;
@@ -67,7 +32,7 @@
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
   }
-  .project1 {
+  .short-item {
     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/fringe-short.png");
     height: 25%;
     width: 100%;
@@ -78,7 +43,7 @@
 }
 
 .row2 {
-  .project1 {
+  .long-item {
     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/movr-homepage.png");
     height: 50%;
     width: 100%;
@@ -92,7 +57,7 @@
       }
     }
   }
-  .project2 {
+  .short-item {
     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop-app-black.png");
     height: 25%;
     width: 100%;
@@ -109,7 +74,7 @@
 }
 
 .row3 {
-  .project1 {
+  .short-item {
     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/j-crew-thumb.png");
     height: 25%;
     width: 100%;
@@ -117,7 +82,7 @@
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
   }
-  .project2 {
+  .long-item {
     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/theMoon-long.png");
     height: 50%;
     width: 100%;

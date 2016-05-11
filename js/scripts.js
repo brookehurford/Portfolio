@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $(".portfolio-content").hide();
+  $("#portfolio-details").hide();
+  $(".songLab-content").hide();
   $(".closing-X").hide();
 
   $(".portfolio-link").click(function(){
@@ -20,4 +22,19 @@ $(document).ready(function(){
     $(".contact-block").show();
     return false;
   });
+
+  $(".songLab").click(function(){
+    $("#portfolio-details").show();
+    $(".songLab-content").toggle();
+    $('html, body').animate({
+        scrollTop: $("#portfolio-details").offset().top
+    }, 1000);
+    return false;
+  })
+
+  $("#allProjects").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+    }, 1000);
+  })
 });

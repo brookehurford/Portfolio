@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-h1, h3, .row1 .project2:hover:before, .row1 .project1:hover:before, .row2 .project1:hover:before, .row2 .project2:hover:before, .row3 .project1:hover:before, .row3 .project2:hover:before {
+h1, h3, .row1 .long-item:hover:before, .row1 .short-item:hover:before, .row2 .long-item:hover:before, .row2 .short-item:hover:before, .row3 .short-item:hover:before, .row3 .long-item:hover:before {
   font-family: 'Oswald', sans-serif; }
 
 .mainHeader .portfolio-block, .mainHeader .contact-block {
@@ -36,8 +36,7 @@ img {
   max-width: 150px; }
 
 h1 {
-  font-weight: lighter;
-  color: red; }
+  font-weight: lighter; }
 
 h3 {
   font-size: 1.5em;
@@ -50,7 +49,8 @@ h3 {
 
 .portfolioWrapper {
   background-color: #EA7D52;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 100vh; }
 
 .full-width {
   display: flex;
@@ -129,14 +129,18 @@ h3 {
     flex: 1;
     height: 80vh;
     margin: 0px 10px; }
-    .portfolio-content .row1 .project1, .portfolio-content .row1 .project2, .portfolio-content .row2 .project1, .portfolio-content .row2 .project2, .portfolio-content .row3 .project1, .portfolio-content .row3 .project2 {
+    .portfolio-content .row1 .short-item, .portfolio-content .row1 .long-item, .portfolio-content .row2 .short-item, .portfolio-content .row2 .long-item, .portfolio-content .row3 .short-item, .portfolio-content .row3 .long-item {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 10px;
       color: white; }
+    .portfolio-content .row1 .short-item, .portfolio-content .row2 .short-item, .portfolio-content .row3 .short-item {
+      min-height: 300px; }
+    .portfolio-content .row1 .long-item, .portfolio-content .row2 .long-item, .portfolio-content .row3 .long-item {
+      min-height: 500px; }
 
-.row1 .project2 {
+.row1 .long-item {
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/songLab-long.png");
   position: relative;
@@ -146,7 +150,7 @@ h3 {
   background-image: url("../img/songLab-long.png");
   background-size: cover;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .row1 .project2:before {
+  .row1 .long-item:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/songLab-long.png");
     background-size: cover;
     content: '';
@@ -159,10 +163,10 @@ h3 {
     width: 100%;
     z-index: -100;
     transition: all 500ms; }
-  .row1 .project2:hover p {
+  .row1 .long-item:hover p {
     transition: all 500ms;
     display: block; }
-  .row1 .project2:hover:before {
+  .row1 .long-item:hover:before {
     transition: all 500ms;
     opacity: 1;
     content: "view project";
@@ -173,7 +177,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center; }
-.row1 .project1 {
+.row1 .short-item {
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fringe-short.png");
   position: relative;
@@ -183,7 +187,7 @@ h3 {
   background-image: url("../img/fringe-short.png");
   background-size: cover;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .row1 .project1:before {
+  .row1 .short-item:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fringe-short.png");
     background-size: cover;
     content: '';
@@ -196,10 +200,10 @@ h3 {
     width: 100%;
     z-index: -100;
     transition: all 500ms; }
-  .row1 .project1:hover p {
+  .row1 .short-item:hover p {
     transition: all 500ms;
     display: block; }
-  .row1 .project1:hover:before {
+  .row1 .short-item:hover:before {
     transition: all 500ms;
     opacity: 1;
     content: "view project";
@@ -211,7 +215,7 @@ h3 {
     justify-content: center;
     align-items: center; }
 
-.row2 .project1 {
+.row2 .long-item {
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/movr-homepage.png");
   position: relative;
@@ -221,7 +225,7 @@ h3 {
   background-image: url("../img/movr-homepage.png");
   background-size: cover;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .row2 .project1:before {
+  .row2 .long-item:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/movr-homepage.png");
     background-size: cover;
     content: '';
@@ -234,10 +238,10 @@ h3 {
     width: 100%;
     z-index: -100;
     transition: all 500ms; }
-  .row2 .project1:hover p {
+  .row2 .long-item:hover p {
     transition: all 500ms;
     display: block; }
-  .row2 .project1:hover:before {
+  .row2 .long-item:hover:before {
     transition: all 500ms;
     opacity: 1;
     content: "view project";
@@ -248,10 +252,10 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .row2 .project1 a .linkGridItem {
+  .row2 .long-item a .linkGridItem {
     height: 100px;
     width: 100px; }
-.row2 .project2 {
+.row2 .short-item {
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/scoop-app-black.png");
   position: relative;
@@ -261,7 +265,7 @@ h3 {
   background-image: url("../img/scoop-app-black.png");
   background-size: cover;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .row2 .project2:before {
+  .row2 .short-item:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/scoop-app-black.png");
     background-size: cover;
     content: '';
@@ -274,10 +278,10 @@ h3 {
     width: 100%;
     z-index: -100;
     transition: all 500ms; }
-  .row2 .project2:hover p {
+  .row2 .short-item:hover p {
     transition: all 500ms;
     display: block; }
-  .row2 .project2:hover:before {
+  .row2 .short-item:hover:before {
     transition: all 500ms;
     opacity: 1;
     content: "view project";
@@ -288,11 +292,11 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .row2 .project2 a .linkGridItem {
+  .row2 .short-item a .linkGridItem {
     height: 100px;
     width: 100px; }
 
-.row3 .project1 {
+.row3 .short-item {
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/j-crew-thumb.png");
   position: relative;
@@ -302,7 +306,7 @@ h3 {
   background-image: url("../img/j-crew-thumb.png");
   background-size: cover;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .row3 .project1:before {
+  .row3 .short-item:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/j-crew-thumb.png");
     background-size: cover;
     content: '';
@@ -315,10 +319,10 @@ h3 {
     width: 100%;
     z-index: -100;
     transition: all 500ms; }
-  .row3 .project1:hover p {
+  .row3 .short-item:hover p {
     transition: all 500ms;
     display: block; }
-  .row3 .project1:hover:before {
+  .row3 .short-item:hover:before {
     transition: all 500ms;
     opacity: 1;
     content: "view project";
@@ -329,7 +333,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center; }
-.row3 .project2 {
+.row3 .long-item {
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/theMoon-long.png");
   position: relative;
@@ -339,7 +343,7 @@ h3 {
   background-image: url("../img/theMoon-long.png");
   background-size: cover;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .row3 .project2:before {
+  .row3 .long-item:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/theMoon-long.png");
     background-size: cover;
     content: '';
@@ -352,10 +356,10 @@ h3 {
     width: 100%;
     z-index: -100;
     transition: all 500ms; }
-  .row3 .project2:hover p {
+  .row3 .long-item:hover p {
     transition: all 500ms;
     display: block; }
-  .row3 .project2:hover:before {
+  .row3 .long-item:hover:before {
     transition: all 500ms;
     opacity: 1;
     content: "view project";
@@ -381,14 +385,9 @@ h3 {
   .adminTile .adminButtons {
     margin-top: 20px; }
 
-.projectTile .ember-view {
+.songLab-content {
+  height: 100vh;
   width: 100%;
-  border: 1px solid lightgrey;
-  padding: 2% 5%;
-  margin-bottom: 3%;
-  transition: all 300ms linear; }
-  .projectTile .ember-view:hover {
-    transition: all 300ms linear;
-    background-color: mintcream; }
+  color: white; }
 
 /*# sourceMappingURL=app.css.map */
