@@ -3,25 +3,94 @@
 
 .portfolio-content {
   @include flex();
-  border: 2px solid yellow;
-  width: 80%;
+  width: 90%;
   .row1, .row2, .row3 {
     @include flex($direction: column);
     flex: 1;
     height: 80vh;
-  }
-  img {
-    width: 50%;
-    margin-bottom: 10px;
+    margin: 0px 10px;
+    .project1, .project2 {
+      @include flex($justify: center, $align-items: center);
+      margin: 10px;
+      color: white;
+    }
   }
 }
 
+// .row1 {
+//   .project1 {
+//     height: 25%;
+//     width: 100%;
+//     background-image: url("#{$img}/songLab-square-thumb.png");
+//     background-size: cover;
+//     box-shadow: 1px 1px 1px rgba($black, 0.5);
+//     transition: all 200ms linear;
+//     &:hover {
+//       transition: all 200ms linear;
+//       background-image: linear-gradient(rgba($black, 0.5), rgba($black, 0.5)),url("#{$img}/songLab-square-thumb.png");
+//     }
+//   }
+//   .project2 {
+//     height: 50%;
+//     width: 100%;
+//     background-image: url("#{$img}/fringe-homepage.png");
+//     background-size: cover;
+//     box-shadow: 1px 1px 1px rgba($black, 0.5);
+//   }
+// }
+
 .row1 {
-  border: 2px solid pink;
   .project1 {
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/songLab-square-thumb.png");
     height: 25%;
     width: 100%;
     background-image: url("#{$img}/songLab-square-thumb.png");
+    box-shadow: 1px 1px 1px rgba($black, 0.5);
+  }
+  .project2 {
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/fringe-homepage.png");
+    height: 50%;
+    width: 100%;
+    background-image: url("#{$img}/fringe-homepage.png");
     background-size: cover;
+    box-shadow: 1px 1px 1px rgba($black, 0.5);
+  }
+}
+
+.row2 {
+  .project1 {
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/movr-homepage.png");
+    height: 50%;
+    width: 100%;
+    background-image: url("#{$img}/movr-homepage.png");
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba($black, 0.5);
+  }
+  .project2 {
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop-app-black.png");
+    height: 25%;
+    width: 100%;
+    background-image: url("#{$img}/scoop-app-black.png");
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba($black, 0.5);
+  }
+}
+
+.row3 {
+  .project1 {
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/j-crew-thumb.png");
+    height: 25%;
+    width: 100%;
+    background-image: url("#{$img}/j-crew-thumb.png");
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba($black, 0.5);
+  }
+  .project2 {
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/theMoon-long.png");
+    height: 50%;
+    width: 100%;
+    background-image: url("#{$img}/theMoon-long.png");
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba($black, 0.5);
   }
 }

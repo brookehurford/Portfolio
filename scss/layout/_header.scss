@@ -29,27 +29,23 @@
     @include grid($secondary);
     @include flex($justify: center, $align-items: center);
     @extend %uppercase;
-    transition: all 200ms linear;
+    transition: all 300ms linear;
     h1 {
       @include text($color: $black, $letter-spacing: 2px);
     }
-    // &:hover {
-    //   transition: all 200ms linear;
-    //   font-size: 1.5em;
-    // }
   }
   .contact-block {
     @include grid($black);
     @include flex($justify: center, $align-items: center);
     @extend %uppercase;
-    transition: all 200ms linear;
+    // transition: all 200ms linear;
     h1 {
       @include text($color: $white, $letter-spacing: 2px);
     }
-    &:hover {
-      transition: all 200ms linear;
-      font-size: 1.5em;
-    }
+    // &:hover {
+    //   transition: all 200ms linear;
+    //   font-size: 1.5em;
+    // }
   }
 }
 

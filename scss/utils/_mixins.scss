@@ -27,3 +27,38 @@
   font-size: 34px;
   @include text($color: $color, $letter-spacing: 2px);
 }
+
+@mixin gradient-animation( $start, $end, $transTime, $bg-image){
+  background-size: 100%;
+  background-image: linear-gradient($start, $end), url($bg-image);
+  position: relative;
+  z-index: 100;
+  &:before {
+    background-image: linear-gradient($end, $start), url($bg-image);
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: all $transTime;
+  }
+  &:hover {
+    p {
+      transition: all $transTime;
+      display: block;
+    }
+     &:before {
+       transition: all $transTime;
+       opacity: 1;
+       content: "view project";
+       @extend %headerFont;
+       @include text(2em, $weight: lighter, $letter-spacing: 1px);
+       text-shadow: 1px 1px 1px grey;
+       @include flex($justify: center, $align-items: center);
+     }
+  }
+}
