@@ -2,6 +2,7 @@ $(document).ready(function(){
   $(".portfolio-content").hide();
   $("#portfolio-details").hide();
   $(".songLab-content").hide();
+  $(".scoop-content").hide();
   $(".closing-X").hide();
 
   $(".portfolio-link").click(function(){
@@ -20,21 +21,61 @@ $(document).ready(function(){
     $(".portfolio-content").hide();
     $(".closing-X").hide();
     $(".contact-block").show();
-    return false;
+    $("#portfolio-details").hide();
+    $(".songLab-content").hide();
   });
 
+  $("#allProjects").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+    }, 1000);
+  })
+
   $(".songLab").click(function(){
+    // Items to Hide
+    $(".scoop-content").hide();
+    $(".fringe-content").hide();
+
+    // Items to Show
     $("#portfolio-details").show();
-    $(".songLab-content").toggle();
+    $(".songLab-content").show();
+
+    // Scroll Code
     $('html, body').animate({
         scrollTop: $("#portfolio-details").offset().top
     }, 1000);
     return false;
   })
 
-  $("#allProjects").click(function(){
+  $(".scoop").click(function(){
+    // Items to Hide
+    $(".songLab-content").hide();
+    $(".fringe-content").hide();
+
+    //Items to Show
+    $("#portfolio-details").show();
+    $(".scoop-content").show();
+
+    // Scroll Code
     $('html, body').animate({
-        scrollTop: $("#portfolio").offset().top
+        scrollTop: $("#portfolio-details").offset().top
     }, 1000);
+    return false;
+  })
+
+  $(".fringe").click(function(){
+    // Items to Hide
+    $(".songLab-content").hide();
+    $(".scoop-content").hide();
+
+    // Items to Show
+    $("#portfolio-details").show();
+    $(".fringe-content").show();
+
+    //Scroll to Code
+    $('html, body').animate({
+        scrollTop: $("#portfolio-details").offset().top
+    }, 1000);
+    return false;
   })
 });

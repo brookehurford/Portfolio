@@ -385,7 +385,7 @@ h3 {
   .adminTile .adminButtons {
     margin-top: 20px; }
 
-.songLab-content {
+.songLab-content, .scoop-content, .fringe-content {
   height: 100vh;
   width: 100%;
   color: white; }
