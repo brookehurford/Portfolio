@@ -1,9 +1,27 @@
 // This file contains styles for grids
 
-.portfolioList {
+
+.portfolio-content {
   @include flex();
   border: 2px solid yellow;
-  .ember-view {
+  width: 80%;
+  .row1, .row2, .row3 {
+    @include flex($direction: column);
+    flex: 1;
+    height: 80vh;
+  }
+  img {
     width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+.row1 {
+  border: 2px solid pink;
+  .project1 {
+    height: 25%;
+    width: 100%;
+    background-image: url("#{$img}/songLab-square-thumb.png");
+    background-size: cover;
   }
 }

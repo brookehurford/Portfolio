@@ -11,3 +11,12 @@
   background-color: $secondary;
   height: 100vh;
 }
+
+.full-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  background-color: purple !important;
+  width: 100% !important;
+  height: 100vh !important;
+}

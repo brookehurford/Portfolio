@@ -31,8 +31,12 @@ a {
 body {
   font-family: 'Open Sans', sans-serif; }
 
+img {
+  max-width: 150px; }
+
 h1 {
-  font-weight: lighter; }
+  font-weight: lighter;
+  color: red; }
 
 h3 {
   font-size: 1.5em;
@@ -47,9 +51,23 @@ h3 {
   background-color: #EA7D52;
   height: 100vh; }
 
+.full-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  background-color: purple !important;
+  width: 100% !important;
+  height: 100vh !important; }
+
 .logo {
   height: 100px;
   margin: 25px; }
+
+.full-width .portfolio-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 10%; }
 
 .mainHeader {
   display: flex;
@@ -89,9 +107,6 @@ h3 {
     .mainHeader .portfolio-block h1 {
       letter-spacing: 2px;
       color: black; }
-    .mainHeader .portfolio-block:hover {
-      transition: all 200ms linear;
-      font-size: 1.5em; }
   .mainHeader .contact-block {
     background-color: black;
     height: 50%;
@@ -107,11 +122,26 @@ h3 {
       transition: all 200ms linear;
       font-size: 1.5em; }
 
-.portfolioList {
+.portfolio-content {
   display: flex;
-  border: 2px solid yellow; }
-  .portfolioList .ember-view {
-    width: 50%; }
+  border: 2px solid yellow;
+  width: 80%; }
+  .portfolio-content .row1, .portfolio-content .row2, .portfolio-content .row3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 80vh; }
+  .portfolio-content img {
+    width: 50%;
+    margin-bottom: 10px; }
+
+.row1 {
+  border: 2px solid pink; }
+  .row1 .project1 {
+    height: 25%;
+    width: 100%;
+    background-image: url("../img/songLab-square-thumb.png");
+    background-size: cover; }
 
 .footer {
   margin: 5% auto;
@@ -120,14 +150,6 @@ h3 {
   letter-spacing: 1px; }
   .footer hr {
     width: 600px; }
-
-.adminButtons {
-  display: flex;
-  justify-content: space-between;
-  width: 20%; }
-
-.shortBtn {
-  max-height: 20px; }
 
 .adminTile {
   border: 1px solid lightgrey;

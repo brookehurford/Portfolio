@@ -4,3 +4,11 @@
   height: 100px;
   margin: 25px;
 }
+
+.full-width {
+  .portfolio-nav {
+    @include flex($justify: space-between);
+    width: 90%;
+    margin-bottom: 10%;
+  }
+}

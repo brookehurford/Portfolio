@@ -2,7 +2,7 @@
 
 h1 {
   @extend %headerFont;
-  @include text($weight: lighter);
+  @include text($color: red, $weight: lighter);
 }
 
 h3 {
