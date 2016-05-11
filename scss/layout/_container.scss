@@ -1,0 +1,13 @@
+// This file contains container styles, and any page wrapper styles.
+
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolioWrapper {
+  background-color: $secondary;
+  height: 100vh;
+}

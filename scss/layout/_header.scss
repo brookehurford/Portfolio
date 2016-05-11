@@ -1,0 +1,74 @@
+// All header styling for the site
+
+.mainHeader {
+  @include flex();
+  flex-wrap: wrap;
+  height: 100vh;
+  .topLeft {
+    @include size(50% 50%);
+    background-image: url(("#{$img}/brooke-left.png"));
+    background-size: cover;
+  }
+  .topRight {
+    @include grid($primary);
+    @include flex($direction: column, $justify: center, $align-items: center);
+    h1 {
+      @include text($weight: lighter, $color: $black);
+      padding: 0;
+      margin: 0;
+      &:first-child{
+        font-size: 60px;
+      }
+      &:nth-child(2){
+        @include text($letter-spacing: 2px);
+        text-transform: uppercase;
+      }
+    }
+  }
+  .portfolio-block {
+    @include grid($secondary);
+    @include flex($justify: center, $align-items: center);
+    @extend %uppercase;
+    transition: all 200ms linear;
+    h1 {
+      @include text($color: $black, $letter-spacing: 2px);
+    }
+    &:hover {
+      transition: all 200ms linear;
+      font-size: 1.5em;
+    }
+  }
+  .contact-block {
+    @include grid($black);
+    @include flex($justify: center, $align-items: center);
+    @extend %uppercase;
+    transition: all 200ms linear;
+    h1 {
+      @include text($color: $white, $letter-spacing: 2px);
+    }
+    &:hover {
+      transition: all 200ms linear;
+      font-size: 1.5em;
+    }
+  }
+}
+
+// .homeHeader {
+//   @include flex($justify: center, $align-items: center);
+//   height: 100vh;
+//   background-image: linear-gradient(rgba(black, 0.5), rgba(black,0.5)), url(("/img/brooke-left.png"));
+//   background-size: cover;
+//   color: $primary;
+//   #logo {
+//     position: absolute;
+//     top: 5%;
+//     right: 5%;
+//   }
+//   .headerContent {
+//     h1 {
+//       @extend %centeredText;
+//       @extend %headerFont;
+//       @include text($weight: lighter, $l-height: 30px, $letter-spacing: 2px);
+//     }
+//   }
+// }
