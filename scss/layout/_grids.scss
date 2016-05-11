@@ -39,19 +39,39 @@
 //   }
 // }
 
+// .row1 {
+//   .project1 {
+//     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/songLab-thumbnail.png");
+//     height: 25%;
+//     width: 100%;
+//     background-image: url("#{$img}/songLab-thumbnail.png");
+//     background-size: cover;
+//     box-shadow: 1px 1px 1px rgba($black, 0.5);
+//   }
+//   .project2 {
+//     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/fringe-homepage.png");
+//     height: 50%;
+//     width: 100%;
+//     background-image: url("#{$img}/fringe-homepage.png");
+//     background-size: cover;
+//     box-shadow: 1px 1px 1px rgba($black, 0.5);
+//   }
+// }
+
 .row1 {
-  .project1 {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/songLab-square-thumb.png");
-    height: 25%;
-    width: 100%;
-    background-image: url("#{$img}/songLab-square-thumb.png");
-    box-shadow: 1px 1px 1px rgba($black, 0.5);
-  }
   .project2 {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/fringe-homepage.png");
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/songLab-long.png");
     height: 50%;
     width: 100%;
-    background-image: url("#{$img}/fringe-homepage.png");
+    background-image: url("#{$img}/songLab-long.png");
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba($black, 0.5);
+  }
+  .project1 {
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/fringe-short.png");
+    height: 25%;
+    width: 100%;
+    background-image: url("#{$img}/fringe-short.png");
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
   }
@@ -65,6 +85,12 @@
     background-image: url("#{$img}/movr-homepage.png");
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
+    a {
+      .linkGridItem {
+        height: 100px;
+        width: 100px;
+      }
+    }
   }
   .project2 {
     @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop-app-black.png");
@@ -73,6 +99,12 @@
     background-image: url("#{$img}/scoop-app-black.png");
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
+    a {
+      .linkGridItem {
+        height: 100px;
+        width: 100px;
+      }
+    }
   }
 }
 

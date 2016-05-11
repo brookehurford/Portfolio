@@ -7,6 +7,10 @@ $(document).ready(function(){
     $(".portfolio-content").show();
     $(".closing-X").show();
     $(".contact-block").hide();
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+    }, 1000);
+    return false;
   });
 
   $(".closing-X").click(function(){
@@ -14,5 +18,6 @@ $(document).ready(function(){
     $(".portfolio-content").hide();
     $(".closing-X").hide();
     $(".contact-block").show();
+    return false;
   });
 });
