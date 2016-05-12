@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.songLab-content, .scoop-content, .fringe-content {
+.songLab-content, .scoop-content, .fringe-content, .jcrew-content, .movr-content, .moon-content {
   height: 100vh;
   width: 100%;
   color: white;
@@ -15,53 +15,55 @@
     @include text($letter-spacing: 1px);
     text-align: center;
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto 40px auto;
   }
 }
 
 .skills-content {
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
-  margin: 20px auto 0px auto;
+  margin: 40px auto 40px auto;
   hr {
     border: 1px solid $secondary;
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
-.project-gallery {
-  margin-top: 20px;
-  display: flex;
-  height: 750px;
-  .left-column {
-    width: 40%;
-    .main-image {
-      background-image: url("#{$img}/songLab-long.png");
-      height: 750px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin: 0 auto;
+.songLab-content {
+  .project-gallery {
+    margin-top: 20px;
+    display: flex;
+    height: 750px;
+    margin-bottom: 25px;
+    .left-column {
+      width: 40%;
+      .main-image {
+        background-image: url("#{$img}/songLab-long.png");
+        height: 750px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
     }
-  }
-  .right-column {
-    width: 60%;
-    .screenshot3 {
-      margin-bottom: 2%;
-      width: 100%;
-      height: 375px;
-      background-image: url("#{$img}/songLab-messages.png");
-      background-size: cover;
-      overflow: hidden;
+    .right-column {
+      width: 60%;
+      .screenshot3 {
+        margin-bottom: 2%;
+        width: 100%;
+        height: 375px;
+        background-image: url("#{$img}/songLab-messages.png");
+        background-size: cover;
+        overflow: hidden;
+      }
+      .screenshot4 {
+        background-image: url("#{$img}/songLab-profile.png");
+        width: 100%;
+        height: 375px;
+        background-size: cover;
+        overflow: hidden;
+      }
     }
-    .screenshot4 {
-      background-image: url("#{$img}/songLab-profile.png");
-      width: 100%;
-      height: 375px;
-      background-size: cover;
-      overflow: hidden;
-    }
-
   }
 }
 

@@ -1,12 +1,18 @@
 $(document).ready(function(){
 
-  $('.materialboxed').materialbox();
-
   $(".portfolio-content").hide();
   $("#portfolio-details").hide();
   $(".songLab-content").hide();
   $(".scoop-content").hide();
+  $(".jcrew-content").hide();
+  $(".movr-content").hide();
+  $(".moon-content").hide();
   $(".closing-X").hide();
+  $(".contact-content").hide();
+
+  $(".contact-nav").click(function(){
+    $(".contact-content").slideToggle();
+  })
 
   $(".portfolio-link").click(function(){
     $(".portfolio-block").addClass("full-width");
@@ -26,6 +32,15 @@ $(document).ready(function(){
     $(".contact-block").show();
     $("#portfolio-details").hide();
     $(".songLab-content").hide();
+    $(".scoop-content").hide();
+    $(".fringe-content").hide();
+    $(".jcrew-content").hide();
+    $(".movr-content").hide();
+    $(".moon-content").hide();
+    $('html, body').animate({
+      scrollTop: $("#siteTop").offset().top
+    }, 1000);
+    return false;
   });
 
   $("#allProjects").click(function(){
@@ -38,6 +53,9 @@ $(document).ready(function(){
     // Items to Hide
     $(".scoop-content").hide();
     $(".fringe-content").hide();
+    $(".jcrew-content").hide();
+    $(".movr-content").hide();
+    $(".moon-content").hide();
 
     // Items to Show
     $("#portfolio-details").show();
@@ -54,6 +72,9 @@ $(document).ready(function(){
     // Items to Hide
     $(".songLab-content").hide();
     $(".fringe-content").hide();
+    $(".jcrew-content").hide();
+    $(".movr-content").hide();
+    $(".moon-content").hide();
 
     //Items to Show
     $("#portfolio-details").show();
@@ -70,6 +91,9 @@ $(document).ready(function(){
     // Items to Hide
     $(".songLab-content").hide();
     $(".scoop-content").hide();
+    $(".jcrew-content").hide();
+    $(".movr-content").hide();
+    $(".moon-content").hide();
 
     // Items to Show
     $("#portfolio-details").show();
@@ -81,4 +105,62 @@ $(document).ready(function(){
     }, 1000);
     return false;
   })
+
+  $(".j-crew").click(function(){
+    // Items to Hide
+    $(".songLab-content").hide();
+    $(".scoop-content").hide();
+    $(".fringe-content").hide();
+    $(".movr-content").hide();
+    $(".moon-content").hide();
+
+    // Items to Show
+    $("#portfolio-details").show();
+    $(".jcrew-content").show();
+
+    //Scroll to Code
+    $('html, body').animate({
+        scrollTop: $("#portfolio-details").offset().top
+    }, 1000);
+    return false;
+  })
+
+  $(".movr").click(function(){
+    // Items to Hide
+    $(".scoop-content").hide();
+    $(".fringe-content").hide();
+    $(".jcrew-content").hide();
+    $(".songLab-content").hide();
+    $(".moon-content").hide();
+
+    // Items to Show
+    $("#portfolio-details").show();
+    $(".movr-content").show();
+
+    // Scroll Code
+    $('html, body').animate({
+        scrollTop: $("#portfolio-details").offset().top
+    }, 1000);
+    return false;
+  })
+
+  $(".moon").click(function(){
+    // Items to Hide
+    $(".scoop-content").hide();
+    $(".fringe-content").hide();
+    $(".jcrew-content").hide();
+    $(".songLab-content").hide();
+    $(".movr-content").hide();
+
+    // Items to Show
+    $("#portfolio-details").show();
+    $(".moon-content").show();
+
+    // Scroll Code
+    $('html, body').animate({
+        scrollTop: $("#portfolio-details").offset().top
+    }, 1000);
+    return false;
+  })
+
 });

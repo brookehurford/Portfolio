@@ -8,10 +8,12 @@
     @include size(50% 50%);
     background-image: url(("#{$img}/brooke-left.png"));
     background-size: cover;
+    min-height: 360px;
   }
   .topRight {
     @include grid($primary);
     @include flex($direction: column, $justify: center, $align-items: center);
+    min-height: 360px;
     h1 {
       @include text($weight: lighter, $color: $black);
       padding: 0;
@@ -26,6 +28,7 @@
     }
   }
   .portfolio-block {
+    min-height: 360px;
     @include grid($secondary);
     @include flex($justify: center, $align-items: center);
     @extend %uppercase;
@@ -33,18 +36,5 @@
     h1 {
       @include text($color: $black, $letter-spacing: 2px);
     }
-  }
-  .contact-block {
-    @include grid($black);
-    @include flex($justify: center, $align-items: center);
-    @extend %uppercase;
-    // transition: all 200ms linear;
-    h1 {
-      @include text($color: $white, $letter-spacing: 2px);
-    }
-    // &:hover {
-    //   transition: all 200ms linear;
-    //   font-size: 1.5em;
-    // }
   }
 }

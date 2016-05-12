@@ -47,6 +47,7 @@
     transition: all $transTime;
   }
   &:hover {
+    cursor: pointer;
     p {
       transition: all $transTime;
       display: block;

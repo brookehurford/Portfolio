@@ -1,0 +1,44 @@
+.contact-block {
+  min-height: 360px;
+  @include grid($black);
+  @include flex($direction: column, $justify: center, $align-items: center);
+  @extend %uppercase;
+  h1 {
+    @include text($color: $white, $letter-spacing: 2px);
+  }
+}
+
+.contact-content {
+  color: $white;
+  @extend %bodyFont;
+  text-transform: capitalize;
+  width: 80%;
+  hr {
+    width: 70%;
+  }
+  a {
+    @extend %centeredText;
+    @include text(1.2em);
+    color: $primary;
+    @extend %uppercase;
+    transition: all 200ms linear;
+    &:hover {
+      transition: all 200ms linear;
+      color: $primary;
+    }
+  }
+  .social-links {
+    width: 90%;
+    margin: 50px auto 0 auto;
+    @include flex($justify: space-around);
+    a {
+      img {
+        @include size(130px);
+        margin: 2%;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

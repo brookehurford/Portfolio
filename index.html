@@ -18,7 +18,9 @@
       </div>
       <div class="portfolio-block" id="portfolio"> <!-- Portfolio Section -->
         <div class="portfolio-nav">
-          <a><h1 class="portfolio-link navWhite">Portfolio</h1></a>
+          <div class="portfolio-link">
+            <h1 class="block-nav portfolio-nav">Portfolio</h1>
+          </div>
           <h1 class="closing-X">X</h1>
         </div>
         <div class="portfolio-content">
@@ -27,11 +29,7 @@
             <div class="long-item songLab"></div>
           </div>
           <div class="row2">
-            <div class="long-item">
-              <a href="scoop.html">
-                <div class="linkGridItem"></div>
-              </a>
-            </div>
+            <div class="long-item movr"></div>
             <div class="short-item scoop">
               <a href="scoop.html">
                 <div class="linkGridItem"></div>
@@ -39,28 +37,52 @@
             </div>
           </div>
           <div class="row3">
-            <div class="short-item"></div>
-            <div class="long-item"></div>
+            <div class="short-item j-crew"></div>
+            <div class="long-item moon"></div>
           </div>
         </div>
       </div>
       <div id="portfolio-details">
+        <button id="allProjects">
+          <img class="up-arrow" src="img/up-arrow.png" alt="up arrow icon" />
+        </button>
         <div class="container">
-          <button id="allProjects">All Projects</button>
+          <div class="fringe-content">
+            <h1>FRINGE</h1>
+            <h2>A site to help users plan trips around a festival that they are going to.</h2>
+            <a class="secondaryBtn" href="https://invis.io/6C7AMPYMQ" target="_blank">Visit Prototype</a>
+            <div class="skills-content">
+              <hr>
+              <h2>Visual Design + UX / UI Design + Sketch + Invision Prototype</h2>
+            </div>
+            <img src="img/songLab-home.png" alt="Screenshot of songLab homepage" />
+          </div>
           <div class="songLab-content">
             <h1>songLab</h1>
             <h2>A musical collaboration website where users can browse and upload music projects in need of creative collaboration.</h2>
             <a class="secondaryBtn" href="https://song-lab.herokuapp.com/home" target="_blank">Visit Site</a>
             <div class="skills-content">
-              <hr>
               <h2>UX / UI Design + CSS / Sass + JavaScript / jQuery</h2>
+              <hr>
             </div>
-            <!-- <div class="project-gallery">
-              <img class="materialboxed" src="img/songLab-home.png" width="650px" alt="Screenshot of songLab homepage" />
-              <img class="materialboxed" src="img/songLab-long.png" width="650px" alt="Screenshot of songLab homepage" />
-              <img class="materialboxed" src="img/songLab-messages.png" width="650px" alt="Screenshot of songLab homepage" />
-              <img class="materialboxed" src="img/songLab-profile.png" width="650px" alt="Screenshot of songLab homepage" />
-            </div> -->
+            <div class="project-gallery">
+              <div class="left-column">
+                <div class="main-image"></div>
+              </div>
+              <div class="right-column">
+                <div class="screenshot3"></div>
+                <div class="screenshot4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="movr-content">
+            <h1>Movr</h1>
+            <h2>A site where people that are moving can find affordable movers, and people willing to help can get paid to move people's things - it's Uber for moving!</h2>
+            <a class="secondaryBtn" href="https://song-lab.herokuapp.com/home" target="_blank">Visit Site</a>
+            <div class="skills-content">
+              <h2>Ember.js + UX / UI Design + CSS / Sass</h2>
+              <hr>
+            </div>
             <div class="project-gallery">
               <div class="left-column">
                 <div class="main-image"></div>
@@ -76,20 +98,61 @@
             <h2>A musical collaboration website where users can browse and upload music projects in need of creative collaboration.</h2>
             <img src="img/songLab-home.png" alt="Screenshot of songLab homepage" />
           </div>
-          <div class="fringe-content">
-            <h1>FRINGE</h1>
-            <h2>A musical collaboration website where users can browse and upload music projects in need of creative collaboration.</h2>
-            <img src="img/songLab-home.png" alt="Screenshot of songLab homepage" />
+        </div>
+      </div>
+      <div class="jcrew-content">
+        <h1>J. Crew</h1>
+        <h2>An e-commerce site complete with product pages, shopping cart, reviews and an admin console.</h2>
+        <a class="secondaryBtn" href="http://brookehurford.github.io/jcrew-ecommerce-ember/dist/index.html#/" target="_blank">Visit Site</a>
+        <div class="skills-content">
+          <h2>Ember.js + CSS / Sass + Firebase Data Storage</h2>
+          <hr>
+        </div>
+        <div class="project-gallery">
+          <div class="left-column">
+            <div class="main-image"></div>
+          </div>
+          <div class="right-column">
+            <div class="screenshot3"></div>
+            <div class="screenshot4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="moon-content">
+        <h1>The Moon</h1>
+        <h2>A responsive site to help users plan their trip to the Moon! Goals of this project were to work on our grid skills and to implement new CSS functionality like video &amp; gif backgrounds.</h2>
+        <a class="secondaryBtn" href="http://brookehurford.github.io/theMoon" target="_blank">Visit Site</a>
+        <div class="skills-content">
+          <h2>CSS / Sass + UI / UX Design</h2>
+          <hr>
+        </div>
+        <div class="project-gallery">
+          <div class="left-column">
+            <div class="main-image"></div>
+          </div>
+          <div class="right-column">
+            <div class="screenshot3"></div>
+            <div class="screenshot4"></div>
           </div>
         </div>
       </div>
       <div class="contact-block">
-        <h1 class="navBlack">Contact</h1>
+        <h1 class="block-nav contact-nav">Contact</h1>
+        <div class="contact-content">
+          <hr>
+          <div class="social-links">
+            <a href="mailto:brookebhurford@gmail.com" target="_blank">
+              <img src="img/email-icon.png" alt="email icon">
+            </a>
+            <a href="https://www.linkedin.com/in/brookehurford" target="_blank">
+              <img src="img/linkedin-icon.png" alt="linkedin icon">
+            </a>
+            <a href="https://github.com/brookehurford" target="_blank">
+              <img src="img/github-icon.png" alt="github icon">
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- <div class="contact-content">
-        <h1>Contact me!</h1>
-        <p>Iphone artisan direct trade ethical Austin. Fixie bespoke banh mi ugh, deep v vinyl hashtag. Tumblr gentrify keffiyeh pop-up iphone twee biodiesel. Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-      </div> -->
     </div>
   </body>
 </html>
