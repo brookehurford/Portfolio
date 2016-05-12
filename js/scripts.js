@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  $('.materialboxed').materialbox();
+
   $(".portfolio-content").hide();
   $("#portfolio-details").hide();
   $(".songLab-content").hide();

@@ -1,0 +1,31 @@
+.materialboxed {
+  display: block;
+  cursor: zoom-in;
+  position: relative;
+  transition: opacity .4s;
+
+  &:hover {
+    &:not(.active) {
+      opacity: .8;
+    }
+    will-change: left, top, width, height;
+  }
+}
+
+.materialboxed.active {
+  cursor: zoom-out;
+  max-width: 100%;
+  height: auto;
+}
+
+#materialbox-overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929;
+  z-index: 1000;
+
+  will-change: opacity;
+}

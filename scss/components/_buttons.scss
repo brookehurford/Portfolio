@@ -2,9 +2,23 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-// .closing-X {
-//   color: red;
-//   position: relative;
-//   bottom: 390px;
-//   left: 580px;
-// }
+.secondaryBtn {
+  border: 2px solid $secondary;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: $white;
+  width: 150px;
+  @extend %centeredText;
+  @extend %headerFont;
+  @include text($size: 1em, $weight: lighter, $letter-spacing: 2px);
+  @extend %uppercase;
+  display: block;
+  margin: 20px auto 0px auto;
+  transition: all 300ms linear;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary;
+    box-shadow: 1px 1px 1px rgba($white, 0.5);
+    transition: all 300ms linear;
+  }
+}

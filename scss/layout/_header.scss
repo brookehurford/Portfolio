@@ -48,23 +48,3 @@
     // }
   }
 }
-
-// .homeHeader {
-//   @include flex($justify: center, $align-items: center);
-//   height: 100vh;
-//   background-image: linear-gradient(rgba(black, 0.5), rgba(black,0.5)), url(("/img/brooke-left.png"));
-//   background-size: cover;
-//   color: $primary;
-//   #logo {
-//     position: absolute;
-//     top: 5%;
-//     right: 5%;
-//   }
-//   .headerContent {
-//     h1 {
-//       @extend %centeredText;
-//       @extend %headerFont;
-//       @include text($weight: lighter, $l-height: 30px, $letter-spacing: 2px);
-//     }
-//   }
-// }

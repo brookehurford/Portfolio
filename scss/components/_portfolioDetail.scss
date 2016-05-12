@@ -1,5 +1,79 @@
+#portfolio-details {
+  width: 100%;
+}
+
 .songLab-content, .scoop-content, .fringe-content {
   height: 100vh;
   width: 100%;
   color: white;
+  h1 {
+    @extend %centeredText;
+    @include text(3em, $letter-spacing: 2px);
+  }
+  h2 {
+    @extend %centeredText;
+    @include text($letter-spacing: 1px);
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
+
+.skills-content {
+  width: 80%;
+  margin-top: 20px;
+  margin: 20px auto 0px auto;
+  hr {
+    border: 1px solid $secondary;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+.project-gallery {
+  margin-top: 20px;
+  display: flex;
+  height: 750px;
+  .left-column {
+    width: 40%;
+    .main-image {
+      background-image: url("#{$img}/songLab-long.png");
+      height: 750px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+    }
+  }
+  .right-column {
+    width: 60%;
+    .screenshot3 {
+      margin-bottom: 2%;
+      width: 100%;
+      height: 375px;
+      background-image: url("#{$img}/songLab-messages.png");
+      background-size: cover;
+      overflow: hidden;
+    }
+    .screenshot4 {
+      background-image: url("#{$img}/songLab-profile.png");
+      width: 100%;
+      height: 375px;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+  }
+}
+
+// .project-gallery {
+//   border: 1px solid mistyrose;
+//   @include flex($justify: center);
+//   height: 80vh;
+//   .material-placeholder {
+//     border: 1px solid red;
+//     flex: 1;
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }
