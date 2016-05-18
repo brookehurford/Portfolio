@@ -16,28 +16,21 @@
   hr {
     width: 70%;
   }
-  a {
-    @extend %centeredText;
-    @include text(1.2em);
-    color: $primary;
-    @extend %uppercase;
-    transition: all 200ms linear;
-    &:hover {
-      transition: all 200ms linear;
-      color: $primary;
-    }
-  }
   .social-links {
     width: 90%;
     margin: 50px auto 0 auto;
     @include flex($justify: space-around);
+    transition: all 200ms linear;
     a {
       img {
-        @include size(130px);
+        @include size(100px);
         margin: 2%;
-      }
-      &:hover {
-        transform: scale(1.2);
+        transition: all 200ms linear;
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+          transition: all 200ms linear;
+        }
       }
     }
   }

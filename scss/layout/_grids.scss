@@ -4,6 +4,7 @@
 .portfolio-content {
   @include flex();
   width: 90%;
+  max-width: 1000px;
   .row1, .row2, .row3 {
     @include flex($direction: column);
     flex: 1;

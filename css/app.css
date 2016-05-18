@@ -10,10 +10,10 @@ h1, .row1 .long-item:hover:before, .row1 .short-item:hover:before, .row2 .long-i
 h2, h3, .contact-content {
   font-family: 'Open Sans', sans-serif; }
 
-.secondaryBtn, .songLab-content h1, .scoop-content h1, .fringe-content h1, .jcrew-content h1, .movr-content h1, .moon-content h1, .songLab-content h2, .scoop-content h2, .fringe-content h2, .jcrew-content h2, .movr-content h2, .moon-content h2, .contact-content a {
+.secondaryBtn, .songLab-content h1, .scoop-content h1, .fringe-content h1, .jcrew-content h1, .movr-content h1, .moon-content h1, .songLab-content h2, .scoop-content h2, .fringe-content h2, .jcrew-content h2, .movr-content h2, .moon-content h2 {
   text-align: center; }
 
-.mainHeader .portfolio-block, .secondaryBtn, #allProjects, .contact-block, .contact-content a {
+.mainHeader .portfolio-block, .secondaryBtn, #allProjects, .contact-block {
   text-transform: uppercase; }
 
 *,
@@ -64,17 +64,14 @@ h3 {
   background-color: #EA7D52 !important;
   width: 100% !important;
   height: 100vh !important;
-  min-height: 1200px; }
+  min-height: 1000px !important; }
 
 .full-width .portfolio-nav {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin-top: 3%;
-  margin-bottom: 8%; }
-  .full-width .portfolio-nav .navBlack:hover {
-    font-size: 2em;
-    letter-spacing: 0px; }
+  margin-top: 1%;
+  margin-bottom: 1%; }
 
 .closing-X {
   cursor: pointer; }
@@ -82,10 +79,6 @@ h3 {
 .block-nav {
   transition: all 200ms linear;
   cursor: pointer; }
-  .block-nav:hover {
-    font-size: 40px;
-    transition: all 200ms linear;
-    letter-spacing: 3px; }
 
 .mainHeader {
   display: flex;
@@ -131,7 +124,8 @@ h3 {
 
 .portfolio-content {
   display: flex;
-  width: 90%; }
+  width: 90%;
+  max-width: 1000px; }
   .portfolio-content .row1, .portfolio-content .row2, .portfolio-content .row3 {
     display: flex;
     flex-direction: column;
@@ -447,12 +441,14 @@ h3 {
   width: 100%;
   color: white; }
   .songLab-content h1, .scoop-content h1, .fringe-content h1, .jcrew-content h1, .movr-content h1, .moon-content h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 2px; }
   .songLab-content h2, .scoop-content h2, .fringe-content h2, .jcrew-content h2, .movr-content h2, .moon-content h2 {
+    font-size: 18px;
+    line-height: 27px;
     letter-spacing: 1px;
     text-align: center;
-    width: 70%;
+    width: 65%;
     margin: 20px auto 40px auto; }
 
 .skills-content {
@@ -483,40 +479,47 @@ h3 {
       margin-bottom: 2%;
       width: 100%;
       height: 375px;
-      background-image: url("../img/songLab-messages.png");
+      background-image: url("../img/songLab-profile.png");
       background-size: cover;
       overflow: hidden; }
     .songLab-content .project-gallery .right-column .screenshot4 {
-      background-image: url("../img/songLab-profile.png");
+      background-image: url("../img/songLab-messages.png");
       width: 100%;
       height: 375px;
       background-size: cover;
       overflow: hidden; }
 
-.materialboxed {
-  display: block;
-  cursor: zoom-in;
-  position: relative;
-  transition: opacity .4s; }
-  .materialboxed:hover {
-    will-change: left, top, width, height; }
-    .materialboxed:hover:not(.active) {
-      opacity: .8; }
-
-.materialboxed.active {
-  cursor: zoom-out;
-  max-width: 100%;
-  height: auto; }
-
-#materialbox-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #292929;
-  z-index: 1000;
-  will-change: opacity; }
+.fringe-content .project-gallery {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 750px;
+  margin-bottom: 25px; }
+  .fringe-content .project-gallery .screenshot1 {
+    background-image: url("../img/fringe-home.png");
+    height: 700px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; }
+  .fringe-content .project-gallery .screenshot2 {
+    background-image: url("../img/fringe-browse.png");
+    height: 700px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; }
+  .fringe-content .project-gallery .screenshot3 {
+    background-image: url("../img/fringe-about.png");
+    height: 700px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center; }
 
 .up-arrow {
   height: 50px;
@@ -541,23 +544,20 @@ h3 {
   width: 80%; }
   .contact-content hr {
     width: 70%; }
-  .contact-content a {
-    font-size: 1.2em;
-    color: #BCE784;
-    transition: all 200ms linear; }
-    .contact-content a:hover {
-      transition: all 200ms linear;
-      color: #BCE784; }
   .contact-content .social-links {
     width: 90%;
     margin: 50px auto 0 auto;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    transition: all 200ms linear; }
     .contact-content .social-links a img {
-      height: 130px;
-      width: 130px;
-      margin: 2%; }
-    .contact-content .social-links a:hover {
-      transform: scale(1.2); }
+      height: 100px;
+      width: 100px;
+      margin: 2%;
+      transition: all 200ms linear;
+      opacity: 0.8; }
+      .contact-content .social-links a img:hover {
+        opacity: 1;
+        transition: all 200ms linear; }
 
 /*# sourceMappingURL=app.css.map */

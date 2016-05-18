@@ -8,13 +8,13 @@
   color: white;
   h1 {
     @extend %centeredText;
-    @include text(3em, $letter-spacing: 2px);
+    @include text(2.5em, $letter-spacing: 2px);
   }
   h2 {
     @extend %centeredText;
-    @include text($letter-spacing: 1px);
+    @include text(18px, $l-height: 27px, $letter-spacing: 1px);
     text-align: center;
-    width: 70%;
+    width: 65%;
     margin: 20px auto 40px auto;
   }
 }
@@ -52,12 +52,12 @@
         margin-bottom: 2%;
         width: 100%;
         height: 375px;
-        background-image: url("#{$img}/songLab-messages.png");
+        background-image: url("#{$img}/songLab-profile.png");
         background-size: cover;
         overflow: hidden;
       }
       .screenshot4 {
-        background-image: url("#{$img}/songLab-profile.png");
+        background-image: url("#{$img}/songLab-messages.png");
         width: 100%;
         height: 375px;
         background-size: cover;
@@ -67,15 +67,64 @@
   }
 }
 
-// .project-gallery {
-//   border: 1px solid mistyrose;
-//   @include flex($justify: center);
-//   height: 80vh;
-//   .material-placeholder {
-//     border: 1px solid red;
-//     flex: 1;
-//     img {
-//       width: 100%;
+
+.fringe-content {
+  .project-gallery {
+    margin-top: 20px;
+    @include flex($justify: center, $align-items: baseline);
+    height: 750px;
+    margin-bottom: 25px;
+    .screenshot1 {
+      background-image: url("#{$img}/fringe-home.png");
+      height: 700px;
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto;
+    }
+    .screenshot2 {
+      background-image: url("#{$img}/fringe-browse.png");
+      height: 700px;
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto;
+    }
+    .screenshot3 {
+      background-image: url("#{$img}/fringe-about.png");
+      height: 700px;
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      background-position: center;
+    }
+  }
+}
+
+// .fringe-content {
+//   .project-gallery {
+//     margin-top: 20px;
+//     height: 750px;
+//     margin-bottom: 25px;
+//     border: 1px solid lime;
+//     // @include flex();
+//     .screenshot1 {
+//       height: 750px;
+//       background-image: url("#{$img}/fringe-home.png");
+//       @extend %bg-cover;
+//     }
+//     .screenshot2 {
+//       height: 750px;
+//       background-image: url("#{$img}/fringe-browse.png");
+//       @extend %bg-cover;
+//     }
+//     .screenshot3 {
+//       height: 750px;
+//       background-image: url("#{$img}/fringe-about.png");
+//       @extend %bg-cover;
 //     }
 //   }
 // }
