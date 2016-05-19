@@ -21,6 +21,14 @@
     width: 40%;
     margin: 0 auto;
     @include flex($justify: center, $align-items: center);
+    @media screen and #{$tablet}{
+      @include flex($direction: column);
+      a {
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }
 
@@ -40,18 +48,32 @@
     margin: 20px auto 100px auto;
     @include flex($justify: center);
     height: 750px;
+    @media screen and #{$tablet}{
+      @include flex($direction: column, $align-items: center);
+      height: 1500px;
+      margin: 0 auto;
+    }
     .left-column {
       width: 40%;
+      @media screen and #{$tablet}{
+        width: 80%;
+      }
       .main-image {
         background-image: url("#{$img}/songLab-long.png");
         height: 750px;
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0 auto;
+        @media screen and #{$tablet}{
+          margin-bottom: 10px;
+        }
       }
     }
     .right-column {
       width: 40%;
+      @media screen and #{$tablet}{
+        width: 80%;
+      }
       .screenshot3 {
         margin-bottom: 2%;
         width: 100%;

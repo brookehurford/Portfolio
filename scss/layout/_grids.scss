@@ -1,15 +1,36 @@
 // This file contains styles for grids
 
 
+// .row1 {
+//   border: 1px solid red;
+// }
+//
+// .row2 {
+//   border: 1px solid lime;
+// }
+//
+// .row3 {
+//   border: 1px solid purple;
+//   @media screen and (max-width: 770px){
+//     border: 2px solid yellow;
+//   }
+// }
+
 .portfolio-content {
   @include flex();
   width: 90%;
   max-width: 1100px;
+  @media screen and #{$tablet}{
+    @include flex($direction: column);
+  }
   .row1, .row2, .row3 {
     @include flex($direction: column);
     flex: 1;
     height: 80vh;
     margin: 0px 10px;
+    @media screen and #{$tablet}{
+      @include flex($direction: row);
+    }
     .short-item, .long-item {
       @include flex($justify: center, $align-items: center);
       margin: 10px;
@@ -17,9 +38,15 @@
     }
     .short-item {
       min-height: 300px;
+      @media screen and #{$tablet}{
+          max-width: 300px;
+      }
     }
     .long-item {
       min-height: 500px;
+      @media screen and #{$tablet}{
+          max-width: 300px;
+      }
     }
   }
 }

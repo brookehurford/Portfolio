@@ -65,13 +65,16 @@ h3 {
   width: 100% !important;
   height: 100vh !important;
   min-height: 1000px !important; }
+  @media screen and (max-width: 775px) {
+    .full-width {
+      min-height: 1700px !important; } }
 
 .full-width .portfolio-nav {
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin-top: 1%;
-  margin-bottom: 1%; }
+  margin-bottom: 35px; }
 
 .closing-X {
   cursor: pointer; }
@@ -126,12 +129,20 @@ h3 {
   display: flex;
   width: 90%;
   max-width: 1100px; }
+  @media screen and (max-width: 775px) {
+    .portfolio-content {
+      display: flex;
+      flex-direction: column; } }
   .portfolio-content .row1, .portfolio-content .row2, .portfolio-content .row3 {
     display: flex;
     flex-direction: column;
     flex: 1;
     height: 80vh;
     margin: 0px 10px; }
+    @media screen and (max-width: 775px) {
+      .portfolio-content .row1, .portfolio-content .row2, .portfolio-content .row3 {
+        display: flex;
+        flex-direction: row; } }
     .portfolio-content .row1 .short-item, .portfolio-content .row1 .long-item, .portfolio-content .row2 .short-item, .portfolio-content .row2 .long-item, .portfolio-content .row3 .short-item, .portfolio-content .row3 .long-item {
       display: flex;
       justify-content: center;
@@ -140,8 +151,14 @@ h3 {
       color: white; }
     .portfolio-content .row1 .short-item, .portfolio-content .row2 .short-item, .portfolio-content .row3 .short-item {
       min-height: 300px; }
+      @media screen and (max-width: 775px) {
+        .portfolio-content .row1 .short-item, .portfolio-content .row2 .short-item, .portfolio-content .row3 .short-item {
+          max-width: 300px; } }
     .portfolio-content .row1 .long-item, .portfolio-content .row2 .long-item, .portfolio-content .row3 .long-item {
       min-height: 500px; }
+      @media screen and (max-width: 775px) {
+        .portfolio-content .row1 .long-item, .portfolio-content .row2 .long-item, .portfolio-content .row3 .long-item {
+          max-width: 300px; } }
 
 .row1 .long-item {
   background-size: 100%;
@@ -456,6 +473,12 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media screen and (max-width: 775px) {
+      .songLab-content .detail-buttons, .scoop-content .detail-buttons, .fringe-content .detail-buttons, .jcrew-content .detail-buttons, .movr-content .detail-buttons, .moon-content .detail-buttons {
+        display: flex;
+        flex-direction: column; }
+        .songLab-content .detail-buttons a:first-child, .scoop-content .detail-buttons a:first-child, .fringe-content .detail-buttons a:first-child, .jcrew-content .detail-buttons a:first-child, .movr-content .detail-buttons a:first-child, .moon-content .detail-buttons a:first-child {
+          margin-bottom: 10px; } }
 
 .skills-content {
   width: 100%;
@@ -471,16 +494,32 @@ h3 {
   display: flex;
   justify-content: center;
   height: 750px; }
+  @media screen and (max-width: 775px) {
+    .songLab-content .project-gallery {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 1500px;
+      margin: 0 auto; } }
   .songLab-content .project-gallery .left-column {
     width: 40%; }
+    @media screen and (max-width: 775px) {
+      .songLab-content .project-gallery .left-column {
+        width: 80%; } }
     .songLab-content .project-gallery .left-column .main-image {
       background-image: url("../img/songLab-long.png");
       height: 750px;
       background-size: contain;
       background-repeat: no-repeat;
       margin: 0 auto; }
+      @media screen and (max-width: 775px) {
+        .songLab-content .project-gallery .left-column .main-image {
+          margin-bottom: 10px; } }
   .songLab-content .project-gallery .right-column {
     width: 40%; }
+    @media screen and (max-width: 775px) {
+      .songLab-content .project-gallery .right-column {
+        width: 80%; } }
     .songLab-content .project-gallery .right-column .screenshot3 {
       margin-bottom: 2%;
       width: 100%;
@@ -635,6 +674,7 @@ h3 {
 
 .contact-block {
   min-height: 360px;
+  cursor: pointer;
   background-color: black;
   height: 50%;
   width: 50%;

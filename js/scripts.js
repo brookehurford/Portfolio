@@ -10,7 +10,7 @@ $(document).ready(function(){
   $(".closing-X").hide();
   $(".contact-content").hide();
 
-  $(".contact-nav").click(function(){
+  $(".contact-block").click(function(){
     $(".contact-content").slideToggle();
   })
 
