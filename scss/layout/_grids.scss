@@ -4,7 +4,7 @@
 .portfolio-content {
   @include flex();
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   .row1, .row2, .row3 {
     @include flex($direction: column);
     flex: 1;
@@ -59,10 +59,10 @@
     }
   }
   .short-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop-app-black.png");
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/meal-home.png");
     height: 25%;
     width: 100%;
-    background-image: url("#{$img}/scoop-app-black.png");
+    background-image: url("#{$img}/meal-home.png");
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
     a {
@@ -84,10 +84,10 @@
     box-shadow: 1px 1px 1px rgba($black, 0.5);
   }
   .long-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/theMoon-long.png");
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop.png");
     height: 50%;
     width: 100%;
-    background-image: url("#{$img}/theMoon-long.png");
+    background-image: url("#{$img}/scoop.png");
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
   }

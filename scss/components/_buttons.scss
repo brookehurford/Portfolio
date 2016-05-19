@@ -13,7 +13,7 @@
   @include text($size: 1em, $weight: lighter, $letter-spacing: 2px);
   @extend %uppercase;
   display: block;
-  margin: 20px auto 0px auto;
+  margin: 0px auto;
   transition: all 300ms linear;
   cursor: pointer;
   &:hover {
