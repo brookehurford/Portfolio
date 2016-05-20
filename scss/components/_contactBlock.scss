@@ -3,6 +3,11 @@
   @include grid($black);
   @include flex($direction: column, $justify: center, $align-items: center);
   @extend %uppercase;
+  transition: all 300ms linear;
+  // &:hover {
+  //   transition: all 300ms linear;
+  //   background-color: #323232;
+  // }
   h1 {
     @include text($color: $white, $letter-spacing: 2px);
   }
