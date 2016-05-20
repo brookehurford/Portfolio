@@ -33,6 +33,18 @@
     @include flex($justify: center, $align-items: center);
     @extend %uppercase;
     transition: all 300ms linear;
+    .block-nav {
+      border: 3px solid transparent;
+      padding: 10px 20px;
+    }
+    &:hover {
+      transition: all 300ms linear;
+      .block-nav {
+        transition: all 300ms linear;
+        border: 3px solid black;
+        padding: 10px 20px;
+      }
+    }
     h1 {
       @include text($color: $black, $letter-spacing: 2px);
     }
