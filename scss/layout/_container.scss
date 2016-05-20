@@ -15,4 +15,7 @@
   width: 100% !important;
   height: 100vh !important;
   min-height: 1000px !important;
+  @media screen and #{$tablet}{
+    min-height: 1700px !important;
+  }
 }

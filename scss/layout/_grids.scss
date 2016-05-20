@@ -1,15 +1,36 @@
 // This file contains styles for grids
 
 
+// .row1 {
+//   border: 1px solid red;
+// }
+//
+// .row2 {
+//   border: 1px solid lime;
+// }
+//
+// .row3 {
+//   border: 1px solid purple;
+//   @media screen and (max-width: 770px){
+//     border: 2px solid yellow;
+//   }
+// }
+
 .portfolio-content {
   @include flex();
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
+  @media screen and #{$tablet}{
+    @include flex($direction: column);
+  }
   .row1, .row2, .row3 {
     @include flex($direction: column);
     flex: 1;
     height: 80vh;
     margin: 0px 10px;
+    @media screen and #{$tablet}{
+      @include flex($direction: row);
+    }
     .short-item, .long-item {
       @include flex($justify: center, $align-items: center);
       margin: 10px;
@@ -17,9 +38,15 @@
     }
     .short-item {
       min-height: 300px;
+      @media screen and #{$tablet}{
+          max-width: 300px;
+      }
     }
     .long-item {
       min-height: 500px;
+      @media screen and #{$tablet}{
+          max-width: 300px;
+      }
     }
   }
 }
@@ -59,10 +86,10 @@
     }
   }
   .short-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop-app-black.png");
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/meal-home.png");
     height: 25%;
     width: 100%;
-    background-image: url("#{$img}/scoop-app-black.png");
+    background-image: url("#{$img}/meal-home.png");
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
     a {
@@ -84,10 +111,10 @@
     box-shadow: 1px 1px 1px rgba($black, 0.5);
   }
   .long-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/theMoon-long.png");
+    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop.png");
     height: 50%;
     width: 100%;
-    background-image: url("#{$img}/theMoon-long.png");
+    background-image: url("#{$img}/scoop.png");
     background-size: cover;
     box-shadow: 1px 1px 1px rgba($black, 0.5);
   }

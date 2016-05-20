@@ -1,5 +1,6 @@
 .contact-block {
   min-height: 360px;
+  cursor: pointer;
   @include grid($black);
   @include flex($direction: column, $justify: center, $align-items: center);
   @extend %uppercase;

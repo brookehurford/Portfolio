@@ -2,16 +2,11 @@
 
 .full-width {
   .portfolio-nav {
-    // border: 2px solid dodgerblue;
     @include flex($justify: space-between);
     width: 90%;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 35px;
     .navBlack {
-      // &:hover {
-      //   font-size: 2em;
-      //   @include text($letter-spacing: 0px);
-      // }
     }
   }
 }
@@ -23,9 +18,4 @@
 .block-nav {
   transition: all 200ms linear;
   cursor: pointer;
-  // &:hover {
-  //   font-size: 40px;
-  //   transition: all 200ms linear;
-  //   @include text($letter-spacing: 3px);
-  // }
 }
