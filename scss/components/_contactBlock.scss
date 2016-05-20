@@ -4,10 +4,18 @@
   @include flex($direction: column, $justify: center, $align-items: center);
   @extend %uppercase;
   transition: all 300ms linear;
-  // &:hover {
-  //   transition: all 300ms linear;
-  //   background-color: #323232;
-  // }
+  .contact-nav {
+    border: 3px solid transparent;
+    padding: 10px 20px;
+  }
+  &:hover {
+    transition: all 300ms linear;
+    .contact-nav {
+      transition: all 300ms linear;
+      border: 3px solid white;
+      padding: 10px 20px;
+    }
+  }
   h1 {
     @include text($color: $white, $letter-spacing: 2px);
   }
