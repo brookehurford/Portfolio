@@ -1,121 +1,54 @@
 // This file contains styles for grids
 
-
-// .row1 {
-//   border: 1px solid red;
-// }
-//
-// .row2 {
-//   border: 1px solid lime;
-// }
-//
-// .row3 {
-//   border: 1px solid purple;
-//   @media screen and (max-width: 770px){
-//     border: 2px solid yellow;
-//   }
-// }
-
-.portfolio-content {
-  @include flex();
+.portfolio-content2 {
+  @include flex($direction: column);
   width: 90%;
+  margin-bottom: 25px;
   max-width: 1100px;
-  @media screen and #{$tablet}{
-    @include flex($direction: column);
-  }
-  .row1, .row2, .row3 {
-    @include flex($direction: column);
-    flex: 1;
-    height: 80vh;
-    margin: 0px 10px;
-    @media screen and #{$tablet}{
-      @include flex($direction: row);
-    }
-    .short-item, .long-item {
-      @include flex($justify: center, $align-items: center);
-      margin: 10px;
-      color: white;
-    }
+  .row1 {
+    @include flex();
     .short-item {
-      min-height: 300px;
-      @media screen and #{$tablet}{
-          max-width: 300px;
-      }
+      flex: 1;
+      height: 300px;
+      margin: 4px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 1px 1px 1px rgba($black, 0.4);
     }
+    .fringe {
+      background-image: url("#{$img}/fringe-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/fringe-thumbnail.png");
+    }
+    .moon {
+      background-image: url("#{$img}/meal-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/meal-thumbnail.png");
+    }
+    .j-crew {
+      background-image: url("#{$img}/jcrew-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/jcrew-thumbnail.png");
+    }
+  }
+  .row2 {
+    @include flex();
     .long-item {
-      min-height: 500px;
-      @media screen and #{$tablet}{
-          max-width: 300px;
-      }
+      flex: 1;
+      height: 500px;
+      margin: 4px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 1px 1px 1px rgba($black, 0.4);
     }
-  }
-}
-
-.row1 {
-  .long-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/songLab-long.png");
-    height: 50%;
-    width: 100%;
-    background-image: url("#{$img}/songLab-long.png");
-    background-size: cover;
-    box-shadow: 1px 1px 1px rgba($black, 0.5);
-  }
-  .short-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/fringe-short.png");
-    height: 25%;
-    width: 100%;
-    background-image: url("#{$img}/fringe-short.png");
-    background-size: cover;
-    box-shadow: 1px 1px 1px rgba($black, 0.5);
-  }
-}
-
-.row2 {
-  .long-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/movr-homepage.png");
-    height: 50%;
-    width: 100%;
-    background-image: url("#{$img}/movr-homepage.png");
-    background-size: cover;
-    box-shadow: 1px 1px 1px rgba($black, 0.5);
-    a {
-      .linkGridItem {
-        height: 100px;
-        width: 100px;
-      }
+    .songLab {
+      background-image: url("#{$img}/songLab-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/songLab-thumbnail.png");
     }
-  }
-  .short-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/meal-home.png");
-    height: 25%;
-    width: 100%;
-    background-image: url("#{$img}/meal-home.png");
-    background-size: cover;
-    box-shadow: 1px 1px 1px rgba($black, 0.5);
-    a {
-      .linkGridItem {
-        height: 100px;
-        width: 100px;
-      }
+    .movr {
+      background-image: url("#{$img}/movr-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/movr-thumbnail.png");
     }
-  }
-}
-
-.row3 {
-  .short-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/j-crew-thumb.png");
-    height: 25%;
-    width: 100%;
-    background-image: url("#{$img}/j-crew-thumb.png");
-    background-size: cover;
-    box-shadow: 1px 1px 1px rgba($black, 0.5);
-  }
-  .long-item {
-    @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 500ms, "#{$img}/scoop.png");
-    height: 50%;
-    width: 100%;
-    background-image: url("#{$img}/scoop.png");
-    background-size: cover;
-    box-shadow: 1px 1px 1px rgba($black, 0.5);
+    .scoop {
+      background-image: url("#{$img}/scoop-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/scoop-thumbnail.png");
+    }
   }
 }

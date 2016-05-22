@@ -29,13 +29,13 @@
 }
 
 @mixin gradient-animation( $start, $end, $transTime, $bg-image){
-  background-size: 100%;
-  background-image: linear-gradient($start, $end), url($bg-image);
+  background-position: center;
   position: relative;
   z-index: 100;
   &:before {
     background-image: linear-gradient($end, $start), url($bg-image);
     background-size: cover;
+    background-position: center;
     content: '';
     display: block;
     height: 100%;
@@ -57,6 +57,7 @@
        opacity: 1;
        content: "view project";
        @extend %headerFont;
+       color: $white;
        @include text(2em, $weight: lighter, $letter-spacing: 1px);
        text-shadow: 1px 1px 1px grey;
        @include flex($justify: center, $align-items: center);
