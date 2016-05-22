@@ -2,19 +2,18 @@
 
 .portfolio-content2 {
   @include flex($direction: column);
-  border: 1px solid purple;
   width: 90%;
   margin-bottom: 25px;
   max-width: 1100px;
   .row1 {
     @include flex();
     .short-item {
-      border: 1px solid black;
       flex: 1;
       height: 300px;
-      margin: 2px;
+      margin: 4px;
       background-size: cover;
       background-position: center;
+      box-shadow: 1px 1px 1px rgba($black, 0.4);
     }
     .fringe {
       background-image: url("#{$img}/fringe-thumbnail.png");
@@ -22,9 +21,11 @@
     }
     .moon {
       background-image: url("#{$img}/meal-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/meal-thumbnail.png");
     }
     .j-crew {
       background-image: url("#{$img}/jcrew-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/jcrew-thumbnail.png");
     }
   }
   .row2 {
@@ -32,18 +33,22 @@
     .long-item {
       flex: 1;
       height: 500px;
-      border: 1px solid black;
-      background-color: yellow;
-      margin: 2px;
+      margin: 4px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 1px 1px 1px rgba($black, 0.4);
     }
     .songLab {
       background-image: url("#{$img}/songLab-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/songLab-thumbnail.png");
     }
     .movr {
       background-image: url("#{$img}/movr-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/movr-thumbnail.png");
     }
     .scoop {
       background-image: url("#{$img}/scoop-thumbnail.png");
+      @include gradient-animation(rgba($black, 0.5), rgba($black, 0.5), 300ms, "#{$img}/scoop-thumbnail.png");
     }
   }
 }

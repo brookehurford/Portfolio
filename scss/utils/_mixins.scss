@@ -29,7 +29,6 @@
 }
 
 @mixin gradient-animation( $start, $end, $transTime, $bg-image){
-  background-size: 100%;
   background-position: center;
   position: relative;
   z-index: 100;

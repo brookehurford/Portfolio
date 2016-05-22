@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-h1, .portfolio-content2 .row1 .fringe:hover:before, .secondaryBtn, #allProjects {
+h1, .portfolio-content2 .row1 .fringe:hover:before, .portfolio-content2 .row1 .moon:hover:before, .portfolio-content2 .row1 .j-crew:hover:before, .portfolio-content2 .row2 .songLab:hover:before, .portfolio-content2 .row2 .movr:hover:before, .portfolio-content2 .row2 .scoop:hover:before, .secondaryBtn, #allProjects {
   font-family: 'Oswald', sans-serif; }
 
 h2, h3, .contact-content {
@@ -137,22 +137,20 @@ h3 {
 .portfolio-content2 {
   display: flex;
   flex-direction: column;
-  border: 1px solid purple;
   width: 90%;
   margin-bottom: 25px;
   max-width: 1100px; }
   .portfolio-content2 .row1 {
     display: flex; }
     .portfolio-content2 .row1 .short-item {
-      border: 1px solid black;
       flex: 1;
       height: 300px;
-      margin: 2px;
+      margin: 4px;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
     .portfolio-content2 .row1 .fringe {
       background-image: url("../img/fringe-thumbnail.png");
-      background-size: 100%;
       background-position: center;
       position: relative;
       z-index: 100; }
@@ -188,23 +186,194 @@ h3 {
           justify-content: center;
           align-items: center; }
     .portfolio-content2 .row1 .moon {
-      background-image: url("../img/meal-thumbnail.png"); }
+      background-image: url("../img/meal-thumbnail.png");
+      background-position: center;
+      position: relative;
+      z-index: 100; }
+      .portfolio-content2 .row1 .moon:before {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/meal-thumbnail.png");
+        background-size: cover;
+        background-position: center;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: all 300ms; }
+      .portfolio-content2 .row1 .moon:hover {
+        cursor: pointer; }
+        .portfolio-content2 .row1 .moon:hover p {
+          transition: all 300ms;
+          display: block; }
+        .portfolio-content2 .row1 .moon:hover:before {
+          transition: all 300ms;
+          opacity: 1;
+          content: "view project";
+          color: white;
+          font-size: 2em;
+          font-weight: lighter;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 1px grey;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
     .portfolio-content2 .row1 .j-crew {
-      background-image: url("../img/jcrew-thumbnail.png"); }
+      background-image: url("../img/jcrew-thumbnail.png");
+      background-position: center;
+      position: relative;
+      z-index: 100; }
+      .portfolio-content2 .row1 .j-crew:before {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/jcrew-thumbnail.png");
+        background-size: cover;
+        background-position: center;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: all 300ms; }
+      .portfolio-content2 .row1 .j-crew:hover {
+        cursor: pointer; }
+        .portfolio-content2 .row1 .j-crew:hover p {
+          transition: all 300ms;
+          display: block; }
+        .portfolio-content2 .row1 .j-crew:hover:before {
+          transition: all 300ms;
+          opacity: 1;
+          content: "view project";
+          color: white;
+          font-size: 2em;
+          font-weight: lighter;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 1px grey;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
   .portfolio-content2 .row2 {
     display: flex; }
     .portfolio-content2 .row2 .long-item {
       flex: 1;
       height: 500px;
-      border: 1px solid black;
-      background-color: yellow;
-      margin: 2px; }
+      margin: 4px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
     .portfolio-content2 .row2 .songLab {
-      background-image: url("../img/songLab-thumbnail.png"); }
+      background-image: url("../img/songLab-thumbnail.png");
+      background-position: center;
+      position: relative;
+      z-index: 100; }
+      .portfolio-content2 .row2 .songLab:before {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/songLab-thumbnail.png");
+        background-size: cover;
+        background-position: center;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: all 300ms; }
+      .portfolio-content2 .row2 .songLab:hover {
+        cursor: pointer; }
+        .portfolio-content2 .row2 .songLab:hover p {
+          transition: all 300ms;
+          display: block; }
+        .portfolio-content2 .row2 .songLab:hover:before {
+          transition: all 300ms;
+          opacity: 1;
+          content: "view project";
+          color: white;
+          font-size: 2em;
+          font-weight: lighter;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 1px grey;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
     .portfolio-content2 .row2 .movr {
-      background-image: url("../img/movr-thumbnail.png"); }
+      background-image: url("../img/movr-thumbnail.png");
+      background-position: center;
+      position: relative;
+      z-index: 100; }
+      .portfolio-content2 .row2 .movr:before {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/movr-thumbnail.png");
+        background-size: cover;
+        background-position: center;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: all 300ms; }
+      .portfolio-content2 .row2 .movr:hover {
+        cursor: pointer; }
+        .portfolio-content2 .row2 .movr:hover p {
+          transition: all 300ms;
+          display: block; }
+        .portfolio-content2 .row2 .movr:hover:before {
+          transition: all 300ms;
+          opacity: 1;
+          content: "view project";
+          color: white;
+          font-size: 2em;
+          font-weight: lighter;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 1px grey;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
     .portfolio-content2 .row2 .scoop {
-      background-image: url("../img/scoop-thumbnail.png"); }
+      background-image: url("../img/scoop-thumbnail.png");
+      background-position: center;
+      position: relative;
+      z-index: 100; }
+      .portfolio-content2 .row2 .scoop:before {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/scoop-thumbnail.png");
+        background-size: cover;
+        background-position: center;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: all 300ms; }
+      .portfolio-content2 .row2 .scoop:hover {
+        cursor: pointer; }
+        .portfolio-content2 .row2 .scoop:hover p {
+          transition: all 300ms;
+          display: block; }
+        .portfolio-content2 .row2 .scoop:hover:before {
+          transition: all 300ms;
+          opacity: 1;
+          content: "view project";
+          color: white;
+          font-size: 2em;
+          font-weight: lighter;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 1px grey;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
 
 .footer {
   margin: 5% auto;
