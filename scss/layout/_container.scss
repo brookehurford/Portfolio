@@ -8,14 +8,13 @@
 }
 
 .full-width {
-  display: flex;
-  flex-direction: column;
+  @include flex($direction: column);
   justify-content: flex-start !important;
   background-color: $secondary !important;
   width: 100% !important;
   height: 100vh !important;
   min-height: 1000px !important;
-  @media screen and #{$tablet}{
-    min-height: 1700px !important;
+  @media screen and #{$mobile} {
+    height: 2550px !important;
   }
 }
