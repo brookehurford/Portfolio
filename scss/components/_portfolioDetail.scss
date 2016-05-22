@@ -132,36 +132,24 @@
 
 .fringe-content {
   .project-gallery {
-    margin-top: 20px;
+    margin: 20px 0 25px 0;
     @include flex($justify: center, $align-items: baseline);
-    height: 750px;
-    margin-bottom: 25px;
-    .screenshot1 {
-      background-image: url("#{$img}/fringe-home.png");
+    .screenshot1, .screenshot2, .screenshot3 {
       height: 700px;
       width: 100%;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
       margin: 0 auto;
+    }
+    .screenshot1 {
+      background-image: url("#{$img}/fringe-home.png");
     }
     .screenshot2 {
       background-image: url("#{$img}/fringe-browse.png");
-      height: 700px;
-      width: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 0 auto;
     }
     .screenshot3 {
       background-image: url("#{$img}/fringe-about.png");
-      height: 700px;
-      width: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin: 0 auto;
-      background-position: center;
     }
   }
 }

@@ -536,36 +536,23 @@ h3 {
       overflow: hidden; }
 
 .fringe-content .project-gallery {
-  margin-top: 20px;
+  margin: 20px 0 25px 0;
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  height: 750px;
-  margin-bottom: 25px; }
+  align-items: baseline; }
+  .fringe-content .project-gallery .screenshot1, .fringe-content .project-gallery .screenshot2, .fringe-content .project-gallery .screenshot3 {
+    height: 700px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; }
   .fringe-content .project-gallery .screenshot1 {
-    background-image: url("../img/fringe-home.png");
-    height: 700px;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto; }
+    background-image: url("../img/fringe-home.png"); }
   .fringe-content .project-gallery .screenshot2 {
-    background-image: url("../img/fringe-browse.png");
-    height: 700px;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto; }
+    background-image: url("../img/fringe-browse.png"); }
   .fringe-content .project-gallery .screenshot3 {
-    background-image: url("../img/fringe-about.png");
-    height: 700px;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-position: center; }
+    background-image: url("../img/fringe-about.png"); }
 
 .jcrew-content .project-gallery {
   margin: 20px auto 25px auto;

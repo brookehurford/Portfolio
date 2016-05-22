@@ -29,6 +29,7 @@ $(document).ready(function(){
   $(".closing-X").click(function(){
     $(".portfolio-block").removeClass('full-width');
     $(".portfolio-content").hide();
+    $(".portfolio-content2").hide();
     $(".closing-X").hide();
     $(".contact-block").show();
     $("#portfolio-details").hide();
