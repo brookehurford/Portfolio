@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   $(".portfolio-content").hide();
+  $(".portfolio-content2").hide();
   $("#portfolio-details").hide();
   $(".songLab-content").hide();
   $(".scoop-content").hide();
@@ -16,7 +17,7 @@ $(document).ready(function(){
 
   $(".portfolio-link").click(function(){
     $(".portfolio-block").addClass("full-width");
-    $(".portfolio-content").show();
+    $(".portfolio-content2").show();
     $(".closing-X").show();
     $(".contact-block").hide();
     $('html, body').animate({
