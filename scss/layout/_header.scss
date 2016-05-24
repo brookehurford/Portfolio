@@ -18,12 +18,23 @@
       @include text($weight: lighter, $color: $black);
       padding: 0;
       margin: 0;
+      @media screen and #{$mobile}{
+        text-align: center;
+      }
       &:first-child{
         font-size: 60px;
+        @media screen and #{$mobile}{
+          font-size: 48px;
+          line-height: 60px;
+        }
       }
       &:nth-child(2){
         @include text($letter-spacing: 2px);
         text-transform: uppercase;
+        @media screen and #{$mobile}{
+          font-size: 28px;
+          margin-top: 15px;
+        }
       }
     }
   }

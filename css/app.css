@@ -107,11 +107,22 @@ h3 {
       color: black;
       padding: 0;
       margin: 0; }
+      @media screen and (max-width: 620px) {
+        .mainHeader .topRight h1 {
+          text-align: center; } }
       .mainHeader .topRight h1:first-child {
         font-size: 60px; }
+        @media screen and (max-width: 620px) {
+          .mainHeader .topRight h1:first-child {
+            font-size: 48px;
+            line-height: 60px; } }
       .mainHeader .topRight h1:nth-child(2) {
         letter-spacing: 2px;
         text-transform: uppercase; }
+        @media screen and (max-width: 620px) {
+          .mainHeader .topRight h1:nth-child(2) {
+            font-size: 28px;
+            margin-top: 15px; } }
   .mainHeader .portfolio-block {
     min-height: 360px;
     background-color: #EA7D52;
