@@ -32,7 +32,7 @@
         @include text($letter-spacing: 2px);
         text-transform: uppercase;
         @media screen and #{$mobile}{
-          font-size: 28px;
+          @include text(28px, $letter-spacing: 1px);
           margin-top: 15px;
         }
       }

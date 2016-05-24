@@ -23,6 +23,7 @@
     @include flex($justify: center, $align-items: center);
     @media screen and #{$tablet}{
       @include flex($direction: column);
+      width: 100%;
       a {
         &:first-child {
           margin-bottom: 10px;
@@ -134,6 +135,9 @@
   .project-gallery {
     margin: 20px 0 25px 0;
     @include flex($justify: center, $align-items: baseline);
+    @media screen and #{$tablet}{
+      @include flex($direction: column);
+    }
     .screenshot1, .screenshot2, .screenshot3 {
       height: 700px;
       width: 100%;
@@ -141,6 +145,10 @@
       background-repeat: no-repeat;
       background-position: center;
       margin: 0 auto;
+      @media screen and #{$tablet}{
+        height: 800px;
+        margin-bottom: 15px;
+      }
     }
     .screenshot1 {
       background-image: url("#{$img}/fringe-home.png");

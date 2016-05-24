@@ -48,6 +48,7 @@
         @media screen and #{$mobile}{
           @include size(60px);
           margin: 1%;
+          opacity: 1;
         }
         &:hover {
           opacity: 1;
