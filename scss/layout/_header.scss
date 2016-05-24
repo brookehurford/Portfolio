@@ -11,6 +11,7 @@
     min-height: 360px;
   }
   .topRight {
+    border: 2px solid red;
     @include grid($primary);
     @include flex($direction: column, $justify: center, $align-items: center);
     min-height: 360px;

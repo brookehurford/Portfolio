@@ -69,6 +69,20 @@ h3 {
     .full-width {
       height: 2550px !important; } }
 
+.about-section {
+  color: purple;
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer; }
+
+.about-full-width {
+  transition: all 200ms linear;
+  width: 100% !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
 .full-width .portfolio-nav {
   display: flex;
   justify-content: space-between;
@@ -94,6 +108,7 @@ h3 {
     background-size: cover;
     min-height: 360px; }
   .mainHeader .topRight {
+    border: 2px solid red;
     background-color: #BCE784;
     height: 50%;
     width: 50%;

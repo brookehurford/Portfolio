@@ -18,3 +18,19 @@
     height: 2550px !important;
   }
 }
+
+.about-section {
+  color: purple;
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.about-full-width {
+  transition: all 200ms linear;
+  width: 100% !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

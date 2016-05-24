@@ -13,7 +13,11 @@ $(document).ready(function(){
 
   $(".contact-block").click(function(){
     $(".contact-content").slideToggle();
-  })
+  });
+
+  $(".about-section").click(function(){
+    $(".topRight").addClass("about-full-width");
+  });
 
   $(".portfolio-link").click(function(){
     $(".portfolio-block").addClass("full-width");
