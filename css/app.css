@@ -704,12 +704,23 @@ h3 {
     display: flex;
     justify-content: space-around;
     transition: all 200ms linear; }
+    @media screen and (max-width: 620px) {
+      .contact-content .social-links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto; } }
     .contact-content .social-links a img {
       height: 100px;
       width: 100px;
       margin: 2%;
       transition: all 200ms linear;
       opacity: 0.8; }
+      @media screen and (max-width: 620px) {
+        .contact-content .social-links a img {
+          height: 60px;
+          width: 60px;
+          margin: 1%; } }
       .contact-content .social-links a img:hover {
         opacity: 1;
         transition: all 200ms linear; }
