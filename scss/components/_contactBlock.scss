@@ -1,4 +1,7 @@
 .contact-block {
+  position: absolute;
+  top: 50%;
+  right: 0;
   min-height: 360px;
   cursor: pointer;
   @include grid($black);

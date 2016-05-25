@@ -6,13 +6,18 @@
     width: 90%;
     margin-top: 1%;
     margin-bottom: 1%;
-    .navBlack {
-    }
   }
 }
 
 .closing-X {
   cursor: pointer;
+}
+
+.about-closing-X {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  font-size: 40px !important;
 }
 
 .block-nav {

@@ -10,6 +10,7 @@ $(document).ready(function(){
   $(".moon-content").hide();
   $(".closing-X").hide();
   $(".contact-content").hide();
+  $(".about-content").hide();
 
   $(".contact-block").click(function(){
     $(".contact-content").slideToggle();
@@ -17,6 +18,12 @@ $(document).ready(function(){
 
   $(".about-section").click(function(){
     $(".topRight").addClass("about-full-width");
+    $(".about-content").show();
+  });
+
+  $(".about-closing-X").click(function(){
+    $(".about-content").hide();
+    $(".topRight").removeClass("about-full-width");
   });
 
   $(".portfolio-link").click(function(){
@@ -75,6 +82,11 @@ $(document).ready(function(){
   })
 
   $(".scoop").click(function(){
+    // Remove absolute from four main blocks
+    $(".topRight").addClass("non-absolute");
+    $(".portfolio-block").addClass("non-absolute");
+    $(".contact-block").addClass("non-absolute");
+
     // Items to Hide
     $(".songLab-content").hide();
     $(".fringe-content").hide();
