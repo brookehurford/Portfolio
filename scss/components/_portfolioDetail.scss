@@ -1,5 +1,13 @@
 #portfolio-details {
   width: 100%;
+  border: 2px solid red;
+  margin-top: 550px;
+  @media screen and #{$tablet}{
+    margin-top: 550px;
+  }
+  @media screen and #{$mobile}{
+    margin-top: 2190px;
+  }
 }
 
 .songLab-content, .scoop-content, .fringe-content, .jcrew-content, .movr-content, .moon-content {

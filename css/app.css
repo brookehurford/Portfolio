@@ -4,16 +4,16 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-h1, .portfolio-content2 .row1 .fringe:hover:before, .portfolio-content2 .row1 .moon:hover:before, .portfolio-content2 .row1 .j-crew:hover:before, .portfolio-content2 .row2 .songLab:hover:before, .portfolio-content2 .row2 .movr:hover:before, .portfolio-content2 .row2 .scoop:hover:before, .secondaryBtn, #allProjects {
+h1, .about-section, .portfolio-content2 .row1 .fringe:hover:before, .portfolio-content2 .row1 .moon:hover:before, .portfolio-content2 .row1 .j-crew:hover:before, .portfolio-content2 .row2 .songLab:hover:before, .portfolio-content2 .row2 .movr:hover:before, .portfolio-content2 .row2 .scoop:hover:before, .secondaryBtn, #allProjects {
   font-family: 'Oswald', sans-serif; }
 
 h2, h3, .contact-content {
   font-family: 'Open Sans', sans-serif; }
 
-.secondaryBtn, .songLab-content h1, .scoop-content h1, .fringe-content h1, .jcrew-content h1, .movr-content h1, .moon-content h1, .songLab-content h2, .scoop-content h2, .fringe-content h2, .jcrew-content h2, .movr-content h2, .moon-content h2 {
+.about-section, .secondaryBtn, .songLab-content h1, .scoop-content h1, .fringe-content h1, .jcrew-content h1, .movr-content h1, .moon-content h1, .songLab-content h2, .scoop-content h2, .fringe-content h2, .jcrew-content h2, .movr-content h2, .moon-content h2 {
   text-align: center; }
 
-.mainHeader .bottom-home .portfolio-block, .secondaryBtn, #allProjects, .contact-block {
+.about-section, .mainHeader .bottom-home .portfolio-block, .secondaryBtn, #allProjects, .contact-block {
   text-transform: uppercase; }
 
 *,
@@ -69,12 +69,6 @@ h3 {
     .full-width {
       height: 2550px !important; } }
 
-.about-section {
-  color: purple;
-  border: 2px solid black;
-  padding: 5px 10px;
-  cursor: pointer; }
-
 .about-full-width {
   transition: all 200ms linear;
   width: 100% !important;
@@ -93,6 +87,15 @@ h3 {
 .closing-X {
   cursor: pointer; }
 
+.about-section {
+  font-size: 28px;
+  font-weight: lighter;
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 50%;
+  margin: 50px auto 0 auto; }
+
 .about-closing-X {
   position: absolute;
   top: 5px;
@@ -104,8 +107,7 @@ h3 {
   cursor: pointer; }
 
 .mainHeader {
-  display: flex;
-  flex-direction: column;
+  border: 1px solid yellow;
   flex-wrap: wrap;
   height: 100vh; }
   .mainHeader .top-home {
@@ -119,8 +121,6 @@ h3 {
       min-height: 360px;
       height: 100%; }
     .mainHeader .top-home .topRight {
-      border: 2px solid red;
-      height: 100%;
       background-color: #BCE784;
       height: 50%;
       width: 50%;
@@ -130,6 +130,14 @@ h3 {
       flex-direction: column;
       min-height: 360px;
       transition: all 200ms linear; }
+      .mainHeader .top-home .topRight .about-section {
+        transition: all 200ms linear;
+        opacity: 0; }
+      .mainHeader .top-home .topRight:hover {
+        transition: all 200ms linear; }
+        .mainHeader .top-home .topRight:hover .about-section {
+          transition: all 200ms linear;
+          opacity: 1; }
       .mainHeader .top-home .topRight h1 {
         font-weight: lighter;
         color: black;
@@ -154,13 +162,8 @@ h3 {
               margin-top: 15px; } }
   .mainHeader .bottom-home {
     display: flex;
-    border: 2px solid lime;
     height: 50vh; }
     .mainHeader .bottom-home .portfolio-block {
-      z-index: 9;
-      position: absolute;
-      top: 50%;
-      left: 0;
       height: 50vh;
       width: 50%;
       min-height: 360px;
@@ -189,6 +192,12 @@ h3 {
   top: 0;
   right: 0;
   z-index: 10; }
+
+.absolute-position-portfolioBlock {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 0; }
 
 .portfolio-content2 {
   display: flex;
@@ -465,6 +474,9 @@ h3 {
   .footer hr {
     width: 600px; }
 
+.topRight-content {
+  padding-top: 75px; }
+
 .secondaryBtn {
   border: 2px solid #EA7D52;
   background-color: transparent;
@@ -499,7 +511,15 @@ h3 {
     outline: 0; }
 
 #portfolio-details {
-  width: 100%; }
+  width: 100%;
+  border: 2px solid red;
+  margin-top: 550px; }
+  @media screen and (max-width: 775px) {
+    #portfolio-details {
+      margin-top: 550px; } }
+  @media screen and (max-width: 620px) {
+    #portfolio-details {
+      margin-top: 2190px; } }
 
 .songLab-content, .scoop-content, .fringe-content, .jcrew-content, .movr-content, .moon-content {
   height: 100vh;
@@ -717,9 +737,6 @@ h3 {
   width: 50px; }
 
 .contact-block {
-  position: absolute;
-  top: 50%;
-  right: 0;
   min-height: 360px;
   cursor: pointer;
   background-color: black;
@@ -776,5 +793,11 @@ h3 {
       .contact-content .social-links a img:hover {
         opacity: 1;
         transition: all 200ms linear; }
+
+.absolute-position-contactBlock {
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0; }
 
 /*# sourceMappingURL=app.css.map */

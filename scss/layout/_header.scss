@@ -1,7 +1,7 @@
 // All header styling for the site
 
 .mainHeader {
-  @include flex($direction: column);
+  border: 1px solid yellow;
   flex-wrap: wrap;
   height: 100vh;
   .top-home {
@@ -15,12 +15,21 @@
       height: 100%;
     }
     .topRight {
-      border: 2px solid red;
-      height: 100%;
       @include grid($primary);
       @include flex($direction: column, $justify: center, $align-items: center);
       min-height: 360px;
       transition: all 200ms linear;
+      .about-section {
+        transition: all 200ms linear;
+        opacity: 0;
+      }
+      &:hover {
+        transition: all 200ms linear;
+        .about-section {
+          transition: all 200ms linear;
+          opacity: 1;
+        }
+      }
       h1 {
         @include text($weight: lighter, $color: $black);
         padding: 0;
@@ -48,13 +57,8 @@
   }
   .bottom-home {
     @include flex();
-    border: 2px solid lime;
     height: 50vh;
     .portfolio-block {
-      z-index: 9;
-      position: absolute;
-      top: 50%;
-      left: 0;
       height: 50vh;
       width: 50%;
       min-height: 360px;
@@ -86,4 +90,11 @@
   top: 0;
   right: 0;
   z-index: 10;
+}
+
+.absolute-position-portfolioBlock {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }

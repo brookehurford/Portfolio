@@ -13,6 +13,18 @@
   cursor: pointer;
 }
 
+.about-section {
+  @extend %headerFont;
+  @extend %uppercase;
+  @extend %centeredText;
+  @include text(28px, $weight: lighter);
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 50%;
+  margin: 50px auto 0 auto;
+}
+
 .about-closing-X {
   position: absolute;
   top: 5px;

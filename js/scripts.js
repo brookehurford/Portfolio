@@ -83,9 +83,6 @@ $(document).ready(function(){
 
   $(".scoop").click(function(){
     // Remove absolute from four main blocks
-    $(".topRight").addClass("non-absolute");
-    $(".portfolio-block").addClass("non-absolute");
-    $(".contact-block").addClass("non-absolute");
 
     // Items to Hide
     $(".songLab-content").hide();
